@@ -17,8 +17,9 @@
   }
   
   img {
-    width: 100%;
+    width: 90%;
     height: 300px;
+    border-radius: 2px;
   }
   
   
@@ -95,9 +96,10 @@
   #title {
     color: black;
     font-family: algerian;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
     line-height: 1.2;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
   
@@ -138,16 +140,16 @@
     height: 6px;
     background-color: black;
     width: 55%;
-    border-radius: 10px;
+    border-radius: 5px;
     display: block;
     margin: auto;
     margin-bottom: 3rem;
   }
   
   #projects .projects .box {
-    background-color: rgb(250, 239, 239);
-    border: 5px solid black;
-    border-radius: 3px;
+    background-color: white;
+    border: 3px solid  black;
+    border-radius: 5px;
   }
   
   #projects .projects .box a {
@@ -157,23 +159,28 @@
   }
   
   #projects .projects .box a p {
-    padding: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    background-color: black;
+    width: 90%;
+    border-radius: 30px;
+    padding: 0.6rem;
     font-size: 1.4rem;
     font-weight: 700;
     text-align: center;
-    color: black;
+    color: white;
+  }
+  #projects .projects .box :hover{
+    color: white;
+    background-color: #4104eb;
+    border: 1px solid  black;
+    border-radius: 5px;
+  }
+  #projects .projects .box a p:hover{
+    background-color: white;
+    color: #4104eb;
   }
   
-  
-  .code {
-    color: black;
-    transition: .5s all ease;
-    font-size: 1.6rem;
-  }
-  
-  #projects .projects .box:hover .code {
-    color: var(--primary-color);
-  }
   #contact {
     height: 80vh;
     background-color: var(--secondary-color);
@@ -212,6 +219,29 @@
     transition: transform .5s;
   }
   
+.fa-github{
+  background-color: white;
+  color: black;
+  width: 30px;
+}
+
+.fa-linkedin{
+  background-color: blue;
+  color: white;
+  width: 30px;
+}
+
+.fa-youtube{
+  background-color: white;
+  color: red;
+  width: 30px;
+}
+
+.fa-envelope{
+  background-color: white;
+  color: red;
+  width: 30px;
+}
   #contact .container .social>div a:hover {
     background-color: black;
     transform: translateY(-5px);
@@ -243,6 +273,8 @@
     line-height: 0.8;
   }
   
+  
+
   /* SMARTPHONE */
   @media (max-width: 600px) {
     #navbar {
